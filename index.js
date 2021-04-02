@@ -8,7 +8,7 @@ require('dotenv').config()
 // hiding sensitive data in env file and added env to git ignore
 // console.log(process.env.DB_PASS);
 
-const uri =`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dspyj.mongodb.net/burjAlArab?retryWrites=true&w=majority`;
+const uri =`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dspyj.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 const port = 5000;
 
